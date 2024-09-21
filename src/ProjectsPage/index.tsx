@@ -1,16 +1,16 @@
-import { PROJECTS_INFO } from "./constants";
-import Section from "./Section";
+import { Route, Routes } from "react-router-dom";
+import Projects from "./Projects";
+import ImageClassifier from "@/Project/ImageClassifier";
 
-const Projects = () => {
+const ProjectsPage = () => {
   return (
-    <div className="flex flex-col pt-2">
-      <div className="flex flex-col space-y-12">
-        {PROJECTS_INFO.map((project) => (
-          <Section project={project} />
-        ))}
-      </div>
+    <div className="w-full flex justify-center items-center">
+      <Routes>
+        <Route path="/" element={<Projects />} />
+        <Route path="/image-classifier" element={<ImageClassifier />} />
+      </Routes>
     </div>
   );
 };
 
-export default Projects;
+export default ProjectsPage;
