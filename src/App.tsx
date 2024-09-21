@@ -1,9 +1,9 @@
-import { Navigate, Route, Router, Routes } from "react-router-dom";
-import "./App.css";
-import NavBar from "./Navabar";
+import { Navigate, Route, Routes } from "react-router-dom";
 import About from "./About";
-import Projects from "./Project";
+import "./App.css";
 import Contact from "./Contact";
+import NavBar from "./Navabar";
+import Projects from "./ProjectsPage";
 
 function App() {
   return (
