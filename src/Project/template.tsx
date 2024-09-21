@@ -1,7 +1,7 @@
 import IMAGES from "@/Images/Images";
 
-const ComponentName = () => {
-  return (
+const ComponentName = () => (
+  <div className="w-full flex justify-center items-center">
     <div className="flex flex-col pt-2 space-y-8 w-8/12">
       <div className="flex flex-col space-y-2">
         <p className="text-4xl underline">Objective</p>
@@ -101,7 +101,7 @@ const ComponentName = () => {
         </div>
       </div>
     </div>
-  );
-};
+  </div>
+);
 
 export default ComponentName;

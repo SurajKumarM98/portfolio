@@ -4,7 +4,7 @@ import ImageClassifier from "@/Project/ImageClassifier";
 
 const ProjectsPage = () => {
   return (
-    <div className="w-full flex justify-center items-center">
+    <div>
       <Routes>
         <Route path="/" element={<Projects />} />
         <Route path="/image-classifier" element={<ImageClassifier />} />
