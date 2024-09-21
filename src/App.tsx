@@ -1,20 +1,20 @@
+import { Navigate, Route, Router, Routes } from "react-router-dom";
 import "./App.css";
 import NavBar from "./Navabar";
+import About from "./About";
+import Projects from "./Project";
+import Contact from "./Contact";
 
 function App() {
   return (
     <div>
       <NavBar />
-      <div className="h-screen flex flex-col items-center justify-center space-y-4">
-        <h1 className="text-4xl font-extrabold tracking-tight">
-          Suraj Kumar M
-        </h1>
-        <p className="w-1/2">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae
-          purus sit amet quam rhoncus maximus. Fusce sagittis lectus nec urna
-          gravida, non condimentum nisi accumsan. Maecenas a condimentum lorem.{" "}
-        </p>
-      </div>
+      <Routes>
+        <Route path="/" element={<Navigate to="/about" replace />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </div>
   );
 }
